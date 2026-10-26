@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            height: 100vh;
+            display: grid;
+           grid-template-columns: repeat(4,1fr);
+           grid-template-rows: auto auto auto auto;
+           /* gap: 5px; */
+           }
+        .box{
+            text-align: center;
+            background-color: blue;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+           }
+
+        .HEADER{
+            background-color: black;
+            color: white;
+            grid-column: span 1;
+            grid-row: span 1;
+           }
+
+           .MENUE{
+            background-color: tomato;
+            color: white;
+            grid-column: span 3;
+            }
+            .HERO{
+                background-color: #4e88c5;
+                color: white;
+                grid-column: span 4;
+            }
+            .MAIN{
+                background-color: #24344d;
+                color: white;
+                grid-column: span 2;
+                  grid-row: span 2;
+            }
+            .IMAGE {
+    background-color: #bce4e3;
+    color: white;
+    grid-column: 4 / 5;
+}
+
+.EXTRA {
+    background-color: #49b99a;
+    color: white;
+    grid-column: 4 / 5;
+}
+
+.BANNER{
+    background-color: #ffd36b;
+    color: white;
+    grid-column: span 4;
+}
+
+
+
+        
+
+
+
+
+ 
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box HEADER">HEADER</div>
+        <div class="box MENUE">MENUE</div>
+        <div class="box HERO">HERO</div>
+        <div class="box MAIN">MAIN</div>
+        <div class="box IMAGE">IMAGE</div>
+        <div class="box EXTRA">EXTRA</div>
+        <div class="box BANNER">BANNER</div>
+    </div>
+</body>
+</html>
